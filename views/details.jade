@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Details for account #{accountName}
+  h2 Access Token #{accessToken}
+  h3 Customers
+  ul
+  each c in customers
+    li= c.firstName + ' ' + c.lastName + ' - ' + c.email
+  
+  h3 Funding Sources
+  ul
+  each f in fundingSources
+    li= f.name
