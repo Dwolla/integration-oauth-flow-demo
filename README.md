@@ -20,7 +20,7 @@ Use the package manager `npm` to install the required dependencies.
 
 You will need to have a Dwolla Partner account to retrieve your Dwolla Key and Secret. [Sign up for a Dwolla Partner account](https://accounts.dwolla.com/sign-up/partner) and verify your email address. Once completed, navigate to the [`applications`](https://accounts.dwolla.com/login/partner) tab within the Partner Portal to create a test integration and retrieve your API Key/Secret.
 
-![Application credentials](application.png "Sandbox application credentials")
+![Partner application credentials](partner_application_credentials.png "Partner application credentials")
 
 ### Request Authorization
 Dwolla API Clients will need to accept authorization from your Integration in order for your integration to be able to read, write, or transact. Access tokens are short lived, and are only valid for one hour.
