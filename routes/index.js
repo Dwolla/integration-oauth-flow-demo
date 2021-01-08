@@ -6,7 +6,7 @@ var router = express.Router();
 var apiHost = 'https://api-sandbox.dwolla.com';
 var accountsHost = 'https://accounts-sandbox.dwolla.com';
 
-// Copy values from Dwolla Dashboard.
+// Copy values from Dwolla Partner Portal at: https://partners.dwolla.com/applications
 var applicationKey = '';
 var applicationSecret = '';
 
