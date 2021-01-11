@@ -5,9 +5,8 @@ var router = express.Router();
 
 var apiHost = 'https://api-sandbox.dwolla.com';
 var accountsHost = 'https://accounts-sandbox.dwolla.com';
-var scope = 'send funding managecustomers transactions accountinfofull openid';
 
-// Copy values from Dwolla Dashboard.
+// Copy values from Dwolla Partner Portal at: https://partners.dwolla.com/applications
 var applicationKey = '';
 var applicationSecret = '';
 
@@ -20,7 +19,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/auth', function(req, res, next) {
   // Build the link to begin OAuth flow.
-  res.render('auth', { title: 'Get a token', appName: applicationName, authLink: `${accountsHost}/auth?redirect_uri=${encodeURIComponent(redirectUri)}&client_id=${encodeURIComponent(applicationKey)}&scope=${encodeURIComponent(scope)}` }); 
+  res.render('auth', { title: 'Get a token', appName: applicationName, authLink: `${accountsHost}/auth?redirect_uri=${encodeURIComponent(redirectUri)}&client_id=${encodeURIComponent(applicationKey)}` }); 
 });
 
 router.get('/callback', function(req, res, next) {
