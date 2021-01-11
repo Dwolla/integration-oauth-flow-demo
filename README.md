@@ -5,7 +5,6 @@ Dwolla uses OpenID Connect which is a layer built on top of the OAuth 2.0 protoc
 
 ### Table of Contents
 * [Installation and Setup](#installation-and-setup)
-* [Sandbox Configurations](#sandbox-configurations)
 * [Usage](#usage)
 * [Authorization Flow](#authorization-flow)
 * [Additional Resources](#additional-resources)
